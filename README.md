@@ -1,3 +1,7 @@
+<p align="center">
+<img src="Images/header.jpg" width="80%">
+</p>
+
 # Pumpkin Dog's Graveyard Adventure
 This game was inspired by my all-time favourite game,  [Monster Bash](https://en.wikipedia.org/wiki/Monster_Bash).
 
