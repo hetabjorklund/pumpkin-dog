@@ -17,9 +17,9 @@ You can download the game file from [Dropbox](https://www.dropbox.com/sh/tyk60b3
 * Collect all the pumpkins in under 50 seconds to get a time bonus!
 
 # Creator
-Heta Björklund\
-Github: https://github.com/hetabjorklund\
-LinkedIn: www.linkedin.com/in/heta-bjorklund
+Heta Björklund
+ * Github: https://github.com/hetabjorklund
+ * LinkedIn: www.linkedin.com/in/heta-bjorklund
 
 # Acknowledgements
 
