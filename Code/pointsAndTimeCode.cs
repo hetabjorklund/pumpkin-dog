@@ -12,7 +12,7 @@ public class pointsAndTimeCode : MonoBehaviour
     public int points = 0;
     private int pumpkinsTotal = 35;
     public int pumpkinsLeft = 35;
-    private int timebonus = 15;
+    private int timebonus = 0;
     private GameObject timeTextOnScreen = null;
     private GameObject pointsTextOnScreen = null;
 
@@ -35,21 +35,28 @@ public class pointsAndTimeCode : MonoBehaviour
         // save the time bonus information to bring over to the gameover scene
         if (this.pumpkinsLeft == 0) {
             if (this.time < this.partime) {
-                this.points += this.timebonus;
-                PlayerPrefs.SetInt("timebonus", 1);
+                this.timebonus = 15;
+                PlayerPrefs.SetInt("timebonus", 1);                
             } else {
-                PlayerPrefs.SetInt("timebonus", 0);
+                PlayerPrefs.SetInt("timebonus", 0);                
             }
+
             // save points  to bring over to the gameover scene        
-            PlayerPrefs.SetInt("totalpoints", this.points);
+            PlayerPrefs.SetInt("totalpoints", this.points + this.timebonus);
 
             // save time to bring over to the gameover scene  
             string timespent = this.time.ToString(@"mm\:ss");
             PlayerPrefs.SetString("timespent", timespent);
 
-            // move onto the scene in index 3 i.e. the gameover scene
-            SceneManager.LoadScene(3); 
-        }      
+            // move onto the gameover scene
+            StartCoroutine("ChangeScene"); 
+        }       
+    }
+
+    IEnumerator ChangeScene() {
+        // after a 1 second delay, move onto the scene in index 3 i.e. the gameover scene
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(3); 
     }
 
 }
