@@ -5,15 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class infoCode : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.anyKey) {
             SceneManager.LoadScene(2); // move onto scene in index 2 i.e. main scene
         }
     }
+    
 }

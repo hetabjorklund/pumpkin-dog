@@ -8,7 +8,7 @@ public class quitCode : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
-        }
-        
+        }        
     }
+    
 }

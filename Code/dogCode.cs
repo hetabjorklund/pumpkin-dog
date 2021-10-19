@@ -11,11 +11,6 @@ public class dogCode : MonoBehaviour
 
     // player states: 0 = standing, 1 = walking, 2 = jumping
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         // press right arrow
