@@ -6,11 +6,6 @@ public class ghostCode : MonoBehaviour
 {
     private float speed = -1.2f; // negative as the ghost moves from the right side of screen to the left
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         // move the ghost
@@ -21,8 +16,8 @@ public class ghostCode : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name.Equals("Player")) // if the ghost hits the player
@@ -32,8 +27,7 @@ public class ghostCode : MonoBehaviour
 
             // reduce the points by one
             GameObject.Find("CodeStorage").GetComponent<pointsAndTimeCode>().points -= 1;
-
-        }
-        
+        }        
     }
+
 }

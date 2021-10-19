@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class gameOverCode : MonoBehaviour
 {
-
     private string timebonustext = "";
 
     void Start()
@@ -20,12 +19,7 @@ public class gameOverCode : MonoBehaviour
 
         GameObject.Find("gameOverText").GetComponent<Text>().text = "You got all the pumpkins!\n" + 
         "Your time was " + PlayerPrefs.GetString("timespent") + "\n" + this.timebonustext +
-            "\nYour total points are " + PlayerPrefs.GetInt("totalpoints").ToString() + ".";
-        
+            "\nYour total points are " + PlayerPrefs.GetInt("totalpoints").ToString() + ".";        
     }    
-
-    void Update()
-    {
-        
-    }
+    
 }

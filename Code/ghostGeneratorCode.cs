@@ -9,11 +9,6 @@ public class ghostGeneratorCode : MonoBehaviour
     private float interval = 4.5f;
     private float cameraPosition = 0f;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         cameraPosition = GameObject.Find("Main Camera").GetComponent<Transform>().position.x;
@@ -29,4 +24,5 @@ public class ghostGeneratorCode : MonoBehaviour
             this.timer = 0;            
         }
     }
+    
 }
