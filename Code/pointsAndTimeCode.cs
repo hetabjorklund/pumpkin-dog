@@ -49,7 +49,7 @@ public class pointsAndTimeCode : MonoBehaviour
             PlayerPrefs.SetString("timespent", timespent);
 
             // set pumpkinsLeft as something else than 0 so that the if-condition stops being true and the if-loop stops running during the delay
-            this.pumpkinsLeft = 1;
+            this.pumpkinsLeft = -1;
 
             // move onto the gameover scene
             StartCoroutine("ChangeScene"); 
