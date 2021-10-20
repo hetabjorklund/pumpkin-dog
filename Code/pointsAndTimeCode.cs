@@ -35,8 +35,8 @@ public class pointsAndTimeCode : MonoBehaviour
         // save the time bonus information to bring over to the gameover scene
         if (this.pumpkinsLeft == 0) {
             if (this.time < this.partime) {
-                this.timebonus = 15;
-                PlayerPrefs.SetInt("timebonus", 1);                
+                this.timebonus = 15; 
+                PlayerPrefs.SetInt("timebonus", 1);
             } else {
                 PlayerPrefs.SetInt("timebonus", 0);                
             }
@@ -47,6 +47,9 @@ public class pointsAndTimeCode : MonoBehaviour
             // save time to bring over to the gameover scene  
             string timespent = this.time.ToString(@"mm\:ss");
             PlayerPrefs.SetString("timespent", timespent);
+
+            // set pumpkinsLeft as something else than 0 so that the if-condition stops being true and the if-loop stops running during the delay
+            this.pumpkinsLeft = 1;
 
             // move onto the gameover scene
             StartCoroutine("ChangeScene"); 
