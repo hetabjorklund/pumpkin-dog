@@ -8,18 +8,16 @@ This game was inspired by my all-time favourite game,  [Monster Bash](https://en
 You can download the game file from [Dropbox](https://www.dropbox.com/sh/tyk60b35clan5b1/AABZcjetMHWPuCBCYJlJx4kja?dl=0). Download the whole folder and don't move the .exe file from the folder - it needs to remain in the same folder with all the other files in order to work.
 
 # How to play
-* Press any key to continue.
-* Press ESC to quit.
-* Move left and right with the arrow keys.
-* Jump with the space bar.
+* Press any key to continue on to the game or press ESC to quit.
+* Move left and right with the arrow keys, jump with the space bar.
 * Collect all the pumpkins!
 * Avoid the ghosts: you lose a point every time you hit one.
-* Collect all the pumpkins in under 50 seconds to get a time bonus!
+* If you collect all the pumpkins in under 50 seconds, you get a time bonus!
 
 # Creator
 Heta Björklund
  * Github: https://github.com/hetabjorklund
- * LinkedIn: www.linkedin.com/in/heta-bjorklund
+ * LinkedIn: https://www.linkedin.com/in/heta-bjorklund
 
 # Acknowledgements
 
