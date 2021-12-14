@@ -25,7 +25,7 @@ public class gameOverCode : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetKeyDown(KeyCode.X)) {
             SceneManager.LoadScene(2); // move onto scene in index 2 i.e. the main scene
         }        
     }    
