@@ -25,7 +25,7 @@ Heta Björklund
 
 Made with [Unity](https://unity.com/).
 
-Thank you to all the friends and family who test-played the game: Elina, Laura, Sara, @tvirolai, Anna, @koodikalle-saara, Kerttu, Inkeri, Dad, Tiina & Einar.
+Thank you to all the friends and family who test-played the game: Elina, Laura, Sara, Tuomo, Anna, Saara, Kerttu, Inkeri, Dad, Tiina & Einar.
 
 ## Background and game elements
 [Pixel Art Platformer - Village Props by Cainos](https://assetstore.unity.com/packages/2d/environments/pixel-art-platformer-village-props-166114).
