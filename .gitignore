@@ -1,0 +1,10 @@
+*.meta
+
+/Enemy_ghost/
+/Fonts/
+/GameElements/
+/Player_dog/
+/Prefabs/
+/Scene backgrounds/
+/Scenes/
+/Sounds/
