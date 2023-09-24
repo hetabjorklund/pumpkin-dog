@@ -1,22 +1,32 @@
 <p align="center">
-<img src="Images/header.jpg" width="80%">
+<img src="Images/header.jpg" width="100%">
 </p>
 
 # Pumpkin Dog's Graveyard Adventure
-This game was inspired by my all-time favourite game,  [Monster Bash](https://en.wikipedia.org/wiki/Monster_Bash).
 
-You can download the game file from [Dropbox](https://www.dropbox.com/sh/tyk60b35clan5b1/AABZcjetMHWPuCBCYJlJx4kja?dl=0). Download the whole folder and don't move the .exe file from the folder - it needs to remain in the same folder with all the other files in order to work.
+*Pumpkin Dog's Graveyard Adventure* is a 2D platformer game where your goal is to collect all the pumpkins at the graveyard while avoiding the ghosts. It was inspired by my all-time favourite game,  [Monster Bash](https://en.wikipedia.org/wiki/Monster_Bash).
+
+You can download the game from [Itch](https://hetabjorklund.itch.io/pumpkin-dog). Start the game by opening the *Pumpkin Dog's Graveyard Adventure.exe* file. Don't move the .exe file from the folder - there are hidden files included in the folder that are required for the .exe file to work.
 
 # How to play
 * Press any key to continue on to the game or press ESC to quit.
 * Move left and right with the arrow keys, jump with the space bar.
-* Collect all the pumpkins!
+* Collect all the pumpkins! You get one point from each pumpkin.
 * Avoid the ghosts: you lose a point every time you hit one.
 * If you collect all the pumpkins in under 50 seconds, you get a time bonus!
 
+<p align="center">
+<img src="Images/screenshot_1.png" width="30%">
+<img src="Images/screenshot_2.png" width="30%">
+<img src="Images/screenshot_3.png" width="30%">
+<img src="Images/screenshot_4.png" width="30%">
+<img src="Images/screenshot_5.png" width="30%">
+<img src="Images/screenshot_6.png" width="30%">
+</p>
+
 # Creator
 Heta Björklund
- * Github: https://github.com/hetabjorklund
+ * GitHub: https://github.com/hetabjorklund
  * LinkedIn: https://www.linkedin.com/in/heta-bjorklund
 
 # Acknowledgements
