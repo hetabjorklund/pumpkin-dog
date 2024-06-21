@@ -57,9 +57,13 @@ public class pointsAndTimeCode : MonoBehaviour
     }
 
     IEnumerator ChangeScene() {
-        // after a 1 second delay, move onto the scene in index 3 i.e. the gameover scene
+        // get the index of current scene
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextIndex = currentSceneIndex + 1;
+
+        // after a 1 second delay, move onto the next scene
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(3); 
+        SceneManager.LoadScene(nextIndex);
     }
 
 }
