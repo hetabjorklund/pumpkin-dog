@@ -13,7 +13,7 @@ public class introCode : MonoBehaviour
     void Update()
     {
         if (Input.anyKey) {
-            SceneManager.LoadScene(1); // move onto scene in index 1 i.e. the info scene
+            SceneManager.LoadScene("infoscene"); // move onto the info scene
         }        
     }
     
