@@ -1166,6 +1166,7 @@ GameObject:
   - component: {fileID: 92180750}
   - component: {fileID: 92180749}
   - component: {fileID: 92180752}
+  - component: {fileID: 92180753}
   m_Layer: 0
   m_Name: CodeStorage
   m_TagString: Untagged
@@ -1186,7 +1187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
-  pumpkinsLeft: 35
+  pumpkinsLeft: 1
 --- !u!114 &92180750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1226,6 +1227,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghost: {fileID: 7427335597743743526, guid: d916714341180654e9243b5e25a7d4c6, type: 3}
+--- !u!114 &92180753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92180748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7960d2ea233da7b488584e1b865f2229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &109367613
 GameObject:
   m_ObjectHideFlags: 0
@@ -27462,7 +27475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 109367616}
-  cameraDistance: 110
+  cameraDistance: 90
 --- !u!20 &2144174375
 Camera:
   m_ObjectHideFlags: 0

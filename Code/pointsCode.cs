@@ -5,28 +5,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class pointsAndTimeCode : MonoBehaviour
+public class pointsCode : MonoBehaviour
 { 
-    private TimeSpan time = new TimeSpan(0, 0, 0);
-    private TimeSpan partime = new TimeSpan(0, 0, 50);
     public int points = 0;
     private int pumpkinsTotal = 35;
-    public int pumpkinsLeft = 35;
+    public int pumpkinsLeft = 35; 
     private int timebonus = 0;
-    private GameObject timeTextOnScreen = null;
     private GameObject pointsTextOnScreen = null;
 
     void Start()
     {
-        this.timeTextOnScreen = GameObject.Find("timeText");
         this.pointsTextOnScreen = GameObject.Find("pointsText");
     }
 
     void Update()
     {
-        // time progresses and shows up on screen
-        this.time = this.time.Add(TimeSpan.FromSeconds(1 * Time.deltaTime));
-        this.timeTextOnScreen.GetComponent<Text>().text = "Time: " + this.time.ToString(@"mm\:ss");        
+        Debug.Log("this.pumpkinsLeft" + this.pumpkinsLeft);
+        Debug.Log("this.pumpkinsTotal" + this.pumpkinsTotal);
+        Debug.Log("this.points" + this.points);
 
         // points show up on screen       
         this.pointsTextOnScreen.GetComponent<Text>().text = "Points: " + this.points.ToString() + "/" + this.pumpkinsTotal.ToString();        
@@ -34,24 +30,20 @@ public class pointsAndTimeCode : MonoBehaviour
         // after all pumpkins have been gathered, check if the player beat par time and gets the time bonus
         // save the time bonus information to bring over to the gameover scene
         if (this.pumpkinsLeft == 0) {
-            if (this.time < this.partime) {
+            if (GameObject.Find("CodeStorage").GetComponent<timeCode>().time < GameObject.Find("CodeStorage").GetComponent<timeCode>().partime) {
                 this.timebonus = 15; 
                 PlayerPrefs.SetInt("timebonus", 1);
             } else {
                 PlayerPrefs.SetInt("timebonus", 0);                
             }
 
-            // save points  to bring over to the gameover scene        
+            // save points to bring over to the next scene        
             PlayerPrefs.SetInt("totalpoints", this.points + this.timebonus);
-
-            // save time to bring over to the gameover scene  
-            string timespent = this.time.ToString(@"mm\:ss");
-            PlayerPrefs.SetString("timespent", timespent);
 
             // set pumpkinsLeft as something else than 0 so that the if-condition stops being true and the if-loop stops running during the delay
             this.pumpkinsLeft = -1;
 
-            // move onto the gameover scene
+            // move onto the next scene
             StartCoroutine("ChangeScene"); 
         }       
     }

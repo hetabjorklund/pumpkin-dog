@@ -12,10 +12,11 @@ public class pumpkinCode : MonoBehaviour
             GameObject.Find("SoundStorageMain").GetComponents<AudioSource>()[1].Play();
 
             // increase the points by one
-            GameObject.Find("CodeStorage").GetComponent<pointsAndTimeCode>().points += 1;
+            GameObject.Find("CodeStorage").GetComponent<pointsCode>().points += 1;
 
             // reduce the number of pumpkins left by one
-            GameObject.Find("CodeStorage").GetComponent<pointsAndTimeCode>().pumpkinsLeft -= 1;
+            GameObject.Find("CodeStorage").GetComponent<pointsCode>().pumpkinsLeft -= 1;
+            Debug.Log("pumpkinsLeft: " + GameObject.Find("CodeStorage").GetComponent<pointsCode>().pumpkinsLeft);
 
             // destroy the pumpkin
             Destroy(this.gameObject);

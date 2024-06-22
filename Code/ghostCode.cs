@@ -26,7 +26,7 @@ public class ghostCode : MonoBehaviour
             GameObject.Find("SoundStorageMain").GetComponents<AudioSource>()[2].Play();
 
             // reduce the points by one
-            GameObject.Find("CodeStorage").GetComponent<pointsAndTimeCode>().points -= 1;
+            GameObject.Find("CodeStorage").GetComponent<pointsCode>().points -= 1;
         }        
     }
 
