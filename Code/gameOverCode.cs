@@ -26,7 +26,7 @@ public class gameOverCode : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.X)) {
-            SceneManager.LoadScene("level1"); // move onto the level 1 scene
+            StartCoroutine(GameObject.Find("CodeStorage").GetComponent<sceneManagerCode>().ChangeScene("level1"));
         }        
     }    
     

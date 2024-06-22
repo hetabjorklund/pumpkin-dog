@@ -8,7 +8,7 @@ public class transitionCode : MonoBehaviour
     void Update()
     {
         if (Input.anyKey) {
-            SceneManager.LoadScene("level2"); // move onto the level 2 scene
+            StartCoroutine(GameObject.Find("CodeStorage").GetComponent<sceneManagerCode>().ChangeScene("level2"));
         }
     }
     

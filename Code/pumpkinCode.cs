@@ -16,7 +16,6 @@ public class pumpkinCode : MonoBehaviour
 
             // reduce the number of pumpkins left by one
             GameObject.Find("CodeStorage").GetComponent<pointsCode>().pumpkinsLeft -= 1;
-            Debug.Log("pumpkinsLeft: " + GameObject.Find("CodeStorage").GetComponent<pointsCode>().pumpkinsLeft);
 
             // destroy the pumpkin
             Destroy(this.gameObject);

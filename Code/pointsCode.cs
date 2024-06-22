@@ -44,18 +44,8 @@ public class pointsCode : MonoBehaviour
             this.pumpkinsLeft = -1;
 
             // move onto the next scene
-            StartCoroutine("ChangeScene"); 
+            StartCoroutine(GameObject.Find("CodeStorage").GetComponent<sceneManagerCode>().ChangeNextScene());
         }       
-    }
-
-    IEnumerator ChangeScene() {
-        // get the index of current scene
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextIndex = currentSceneIndex + 1;
-
-        // after a 1 second delay, move onto the next scene
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(nextIndex);
     }
 
 }

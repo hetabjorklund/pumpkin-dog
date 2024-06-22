@@ -13,7 +13,7 @@ public class introCode : MonoBehaviour
     void Update()
     {
         if (Input.anyKey) {
-            SceneManager.LoadScene("infoscene"); // move onto the info scene
+            StartCoroutine(GameObject.Find("CodeStorage").GetComponent<sceneManagerCode>().ChangeScene("infoscene"));
         }        
     }
     
